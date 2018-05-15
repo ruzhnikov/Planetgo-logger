@@ -3,7 +3,7 @@
 
 from setuptools import setup, find_packages
 
-import logger as planetgo_logger
+import pgo_logger as planetgo_logger
 
 setup(
     name="planetgo_logger",
