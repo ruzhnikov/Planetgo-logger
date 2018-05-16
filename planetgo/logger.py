@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
 
-"""Plnaetgo logger module"""
+"""Planetgo logger module"""
 
 import logging
 import os
