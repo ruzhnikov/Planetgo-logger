@@ -1,7 +1,7 @@
 
 # -*- coding: utf-8 -*-
 
-import pytest
-from planetgo import logger
+# import pytest
+# from pgo import logger
 
 # ...
