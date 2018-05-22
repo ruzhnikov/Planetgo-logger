@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from setuptools import setup, find_packages
-import pgo_logger as planetgo_logger
-
+from pgo import logger as planetgo_logger
 
 setup(
     name="planetgo_logger",

@@ -6,7 +6,7 @@
 import logging
 import os
 
-__version__ = "0.1.0"
+__version__ = "0.2.1"
 
 ENV_WORK_DIR = "PGO_WORK_DIR"
 ENV_LOG_LEVEL = "PGO_LOG_LEVEL"
