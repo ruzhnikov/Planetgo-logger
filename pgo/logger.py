@@ -6,10 +6,11 @@
 import logging
 import os
 
-__version__ = "0.2.1"
+__version__ = "0.3.0"
 
 ENV_WORK_DIR = "PGO_WORK_DIR"
 ENV_LOG_LEVEL = "PGO_LOG_LEVEL"
+ENV_LOG_FNAME = "PGO_LOG_FNAME"
 DEFAULT_LOG_LEVEL = "INFO"
 DEFAULT_LOGGER_NAME = "logger"
 LOG_DIR = "/log"
@@ -42,8 +43,13 @@ def get_logger(logger_name=DEFAULT_LOGGER_NAME, log_file_name=None, log_level=No
     logger.setLevel(log_level)
     log_handler = None
 
+    if log_file_name is None:
+        if ENV_LOG_FNAME in os.environ:
+            log_file_name = os.environ.get(ENV_LOG_FNAME)
+
     # the whole path to the log file. Can be None
     whole_log_file = None
+
     if log_file_name is not None:
         whole_log_file = _get_whole_log_file(log_file_name)
 
