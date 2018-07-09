@@ -6,7 +6,7 @@
 import logging
 import os
 
-__version__ = "0.3.0"
+__version__ = "0.4.0"
 
 ENV_WORK_DIR = "PGO_WORK_DIR"
 ENV_LOG_LEVEL = "PGO_LOG_LEVEL"
@@ -15,7 +15,7 @@ DEFAULT_LOG_LEVEL = "INFO"
 DEFAULT_LOGGER_NAME = "logger"
 LOG_DIR = "/log"
 LOG_FORMAT = "%(asctime)s | %(levelname)s | %(process)d | " \
-            "%(name)s | %(filename)s:%(lineno)s | %(message)s"
+    "%(name)s | %(filename)s:%(lineno)s | %(message)s"
 
 
 def get_logger(logger_name=DEFAULT_LOGGER_NAME, log_file_name=None, log_level=None):

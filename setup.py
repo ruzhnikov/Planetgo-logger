@@ -15,5 +15,6 @@ setup(
     description="Planetgo logger",
     long_description="""
         A simple logger for using in other kinds of planetgo site
-        """
+        """,
+    namespace_packages=["pgo"]
 )
